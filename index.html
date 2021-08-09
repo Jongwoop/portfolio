@@ -21,7 +21,7 @@
     <!-- Navbar -->
     <nav id="navbar">
       <div class="navbar__logo">
-        <a href="#"><img src="img/logo.png" alt="logo" /></a>
+        <a href="#"><img src="img/logo_200x125.png" alt="logo" class="logo" /></a>
       </div>
       <ul class="navbar__menu">
         <li class="navbar__menu--item" data-link="#work">Work</li>
@@ -34,62 +34,73 @@
     </nav>
 
     <!-- Home -->
-    <section id="home" class="home--transparent">
+    <section id="home" class="section__container">
       <div class="home__container">
         <div class="home__left">
           <h1 class="home__title">JONG WOO <br />PARK</h1>
           <h3 class="home__description">
-            Web Developer enthusiastic about design and technology based in Modiin, Israel
+            Web Developer enthusiastic about design <br />
+            and technology based in Modiin, Israel
           </h3>
-          <button class="home__contact">Resume</button>
+          <button class="home__contract">Resume</button>
         </div>
         <div class="home__profile">
-          <img src="img/profile.jpg" alt="profile Pic" class="home__avatar" />
+          <img src="img/profile.jpeg" alt="profile Pic" class="home__avatar" />
         </div>
       </div>
     </section>
 
     <!-- About -->
-    <section id="about" class="section section__container">
-      <div class="about_jobs">
-        <img src="img/jobs/google-logo-bw.png" alt="google-logo" class="job__logo" />
-        <img src="img/jobs/lg-logo-bw.png" alt="lg-logo" />
-      </div>
-      <div class="about__description">
-        <div class="about__left">
-          <p>Web Development, <br />Data based working process, <br />and business development</p>
+    <section id="about" class="section">
+      <div class="section__container">
+        <div class="about__jobs">
+          <img src="img/jobs/google-logo-bw.png" alt="google-logo" class="about__job-logo" />
+          <img src="img/jobs/lg-logo-bw.png" alt="lg-logo" class="about__job-logo" />
         </div>
-        <div class="about__right">
-          <h1 class="about__desc">5+</h1>
-          <p class="about__desc">Years<br />Experience<br />working</p>
-        </div>
-      </div>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-html5"></i>
+        <div class="about__description">
+          <div class="about__left">
+            <h2>
+              Web Development, <br />Data based working process, <br />and business development
+            </h2>
           </div>
-          <h2 class="major__title">Frontend</h2>
-          <div class="major__description">
-            Typescript,<br />JavaScript,<br />React<br />HTML<br />CSS
+          <div class="about__right">
+            <h1 class="about__desc">5+</h1>
+            <p class="about__desc">Years<br />Experience<br />working</p>
           </div>
         </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-node"></i>
+        <div class="about__majors">
+          <div class="about__major">
+            <div class="major__left">
+              <div class="major__icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="major__title">Frontend</div>
+            </div>
+            <div class="major__description">
+              Typescript,<br />JavaScript,<br />React<br />HTML<br />CSS
+            </div>
           </div>
-          <h2 class="major__title">BackEnd</h2>
-          <div class="major__description">
-            NoSQL(MongoDB,<br />Mongoose),<br />SQL(MySQL),<br />,SQLite),<br />Node.js,<br />Firebase,<br />Express
+          <div class="about__major">
+            <div class="major__left">
+              <div class="major__icon">
+                <i class="fab fa-node"></i>
+              </div>
+              <div class="major__title">BackEnd</div>
+            </div>
+            <div class="major__description">
+              NoSQL(MongoDB,<br />Mongoose),<br />SQL(MySQL),<br />,SQLite),<br />Node.js,<br />Firebase,<br />Express
+            </div>
           </div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-python"></i>
-          </div>
-          <h2 class="major__title">Others</h2>
-          <div class="major__description">
-            JupyterLab(Python),<br />Git/Github,<br />Postman,<br />VS Code,<br />Iluustrator
+          <div class="about__major">
+            <div class="major__left">
+              <div class="major__icon">
+                <i class="fab fa-python"></i>
+              </div>
+              <div class="major__title">Others</div>
+            </div>
+            <div class="major__description">
+              JupyterLab(Python),<br />Git/Github,<br />Postman,<br />VS Code,<br />Iluustrator
+            </div>
           </div>
         </div>
       </div>
@@ -120,115 +131,90 @@
     </section> -->
 
     <!-- My work -->
-    <section id="work" class="section">
-      <div class="section__container">
-        <h1>Latest Project</h1>
-        <div class="work__categories">
-          <button class="category__btn selected" data-filter="*">All</button>
-          <button class="category__btn" data-filter="Front-End">Front-End</button>
-          <button class="category__btn" data-filter="Back-End">Back-End</button>
-        </div>
-        <div class="work__projects">
-          <a
-            href="https://github.com/Jongwoop/dwitter"
-            target="blank"
-            class="project"
-            data-type="Back-End"
-          >
-            <img src="img/projects/project8.png" alt="project" class="project__img" />
-            <div class="project__description">
-              <h3>Note app</h3>
-              <span>HTML, CSS, Node, Postman</span>
-            </div>
-          </a>
-          <a
-            href="https://github.com/Jongwoop/motion"
-            target="blank"
-            class="project"
-            data-type="Front-End"
-          >
-            <img src="img/projects/project8.png" alt="project" class="project__img" />
-            <div class="project__description">
-              <h3>Note app</h3>
-              <span>HTML, CSS, TypeScript</span>
-            </div>
-          </a>
-          <a
-            href="https://github.com/Jongwoop/card-maker"
-            target="blank"
-            class="project"
-            data-type="Front-End"
-          >
-            <img src="img/projects/project7.png" alt="project" class="project__img" />
-            <div class="project__description">
-              <h3>Note app</h3>
-              <span>HTML, CSS, TypeScript</span>
-            </div>
-          </a>
-          <a
-            href="https://github.com/Jongwoop/card-maker"
-            target="blank"
-            class="project"
-            data-type="Front-End"
-          >
-            <img src="img/projects/project6.png" alt="project" class="project__img" />
-            <div class="project__description">
-              <h3>Note app</h3>
-              <span>HTML, CSS, TypeScript</span>
-            </div>
-          </a>
-          <a
-            href="https://github.com/Jongwoop/card-maker"
-            target="blank"
-            class="project"
-            data-type="Front-End"
-          >
-            <img src="img/projects/project6.png" alt="project" class="project__img" />
-            <div class="project__description">
-              <h3>CardMaker</h3>
-              <span
-                >React, PostCss, React Router, FireBase(Authentication, Realtime Database),
-                Cloudinary</span
-              >
-            </div>
-          </a>
-          <a
-            href="https://github.com/Jongwoop/youtube_react"
-            target="blank"
-            class="project"
-            data-type="Front-End"
-          >
-            <img src="img/projects/project5.png" alt="project" class="project__img" />
-            <div class="project__description">
-              <h3>Youtube clone coding</h3>
-              <span>Youtube APIs, Postman, React Hooks, PostCSS, Axios testable code</span>
-            </div>
-          </a>
-          <a
-            href="https://github.com/Jongwoop/habit_tracker"
-            target="blank"
-            class="project"
-            data-type="Front-End"
-          >
-            <img src="img/projects/project4.png" alt="project" class="project__img" />
-            <div class="project__description">
-              <h3>Habit Tracker</h3>
-              <span>HTML, CSS, JavaScript, React</span>
-            </div>
-          </a>
-          <a
-            href="https://github.com/Jongwoop/grab_the_carrot_game"
-            target="blank"
-            class="project"
-            data-type="Front-End"
-          >
-            <img src="img/projects/project3.png" alt="project" class="project__img" />
-            <div class="project__description">
-              <h3>Game built with Vanila JavaScript</h3>
-              <span>HTML, CSS, JavaScript</span>
-            </div>
-          </a>
-        </div>
+    <section id="work" class="section section__container">
+      <h2 class="work__title">Latest Project</h2>
+      <div class="work__categories">
+        <button class="category__btn selected" data-filter="*">All</button>
+        <button class="category__btn" data-filter="Front-End">Front-End</button>
+        <button class="category__btn" data-filter="Back-End">Back-End</button>
+      </div>
+      <div class="work__projects">
+        <a
+          href="https://github.com/Jongwoop/dwitter"
+          target="blank"
+          class="project"
+          data-type="Back-End"
+        >
+          <img src="img/projects/project8.png" alt="project" class="project__img" />
+          <div class="project__description">
+            <h3>Dwitter</h3>
+            <span>HTML, CSS, Node, Postman</span>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/Jongwoop/card-maker"
+          target="blank"
+          class="project"
+          data-type="Front-End"
+        >
+          <img src="img/projects/project6.png" alt="project" class="project__img" />
+          <div class="project__description">
+            <h3>Note app</h3>
+            <span>HTML, CSS, TypeScript</span>
+          </div>
+        </a>
+        <a
+          href="https://github.com/Jongwoop/card-maker"
+          target="blank"
+          class="project"
+          data-type="Front-End"
+        >
+          <img src="img/projects/project6.png" alt="project" class="project__img" />
+          <div class="project__description">
+            <h3>CardMaker</h3>
+            <span
+              >React, PostCss, React Router, FireBase(Authentication, Realtime Database),
+              Cloudinary</span
+            >
+          </div>
+        </a>
+        <a
+          href="https://github.com/Jongwoop/youtube_react"
+          target="blank"
+          class="project"
+          data-type="Front-End"
+        >
+          <img src="img/projects/project5.png" alt="project" class="project__img" />
+          <div class="project__description">
+            <h3>Youtube clone coding</h3>
+            <span>Youtube APIs, Postman, React Hooks, PostCSS, Axios testable code</span>
+          </div>
+        </a>
+        <a
+          href="https://github.com/Jongwoop/habit_tracker"
+          target="blank"
+          class="project"
+          data-type="Front-End"
+        >
+          <img src="img/projects/project4.png" alt="project" class="project__img" />
+          <div class="project__description">
+            <h3>Habit Tracker</h3>
+            <span>HTML, CSS, JavaScript, React</span>
+          </div>
+        </a>
+        <a
+          href="https://github.com/Jongwoop/grab_the_carrot_game"
+          target="blank"
+          class="project"
+          data-type="Front-End"
+        >
+          <img src="img/projects/project3.png" alt="project" class="project__img" />
+          <div class="project__description">
+            <h3>Game built with Vanila JavaScript</h3>
+            <span>HTML, CSS, JavaScript</span>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -242,19 +228,22 @@
             </div>
             <div class="testimonial__right">
               <i class="fas fa-quote-left"></i>
-              <p>
+              <h3>
                 He was always willing to learn about the projects I was working on and find creative
                 ways to maximize the potential of the project between Korea and Israel. I recommend
                 him as a valuable member of a team.
-              </p>
+              </h3>
               <div class="testimonial__ref">
-                <p class="name">
-                  <a href="https://www.linkedin.com/in/naftalidratman/">
-                    Naftali Dratman / Airbus, Former LG
-                  </a>
-                </p>
-                <i class="fas fa-angle-double-left"></i>
-                <i class="fas fa-angle-double-right"></i>
+                <a
+                  href="https://www.linkedin.com/in/naftalidratman/"
+                  class="testimonial__avartar-name"
+                >
+                  Naftali Dratman / Airbus, Former LG
+                </a>
+                <div class="testimonial__ref-arrow">
+                  <i class="fas fa-angle-double-left"></i>
+                  <i class="fas fa-angle-double-right"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -264,17 +253,24 @@
 
     <!-- Contact -->
     <section id="contact" class="section">
-      <h1 class="contact__title">Let's talk</h1>
-      <h3 class="contact__email">johnpark8390@gmail.com</h3>
-      <div class="contact__links">
-        <a href="https://github.com/jongwooP/" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/jongwoop/" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-linkedin"></i>
-        </a>
+      <div class="contact__right">
+        <h1 class="contact__title">Let's talk</h1>
+        <p class="contact__rights">Jongwoo Park ⓒ - All rights reserved</p>
       </div>
-      <p class="contact__rights">2021 Jongwoo Park - All rights reserved</p>
+      <div class="contact__left">
+        <h3 class="contact__info">
+          johnpark8390@gmail.com <br />
+          +971-547038390
+        </h3>
+        <div class="contact__links">
+          <a href="https://github.com/jongwooP/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jongwoop/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
     </section>
     <!-- Arrow Up btn -->
     <button class="arrow-up">
