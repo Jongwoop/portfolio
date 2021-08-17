@@ -105,6 +105,7 @@ p {
 .section {
   /* padding: 50px; */
   padding-top: 100px;
+  padding-bottom: 70px;
   margin: auto;
 }
 
@@ -481,10 +482,10 @@ p {
 /* Arrow-up */
 .arrow-up {
   color: var(--color-blue);
+  border: 0.5px solid var(--color-blue);
   font-size: var(--font-medium);
-  background-color: var(--color-light-white);
-  padding: var(--font-small);
-  border-radius: 50%;
+  padding: 8px;
+  border-radius: 10%;
   position: fixed;
   right: var(--margin-large);
   bottom: var(--margin-large);
@@ -495,4 +496,97 @@ p {
 .arrow-up.visible {
   opacity: 0.8;
   pointer-events: auto;
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 12px;
+    --font-micro: 10px;
+    /* Size */
+    --size-border-radius: 4px;
+    --margin-large: 30px;
+    --margin-medium: 20px;
+    --margin-small: 8px;
+    --padding-large: 15px;
+    --padding-medium: 8px;
+    --padding-small: 4px;
+  }
+
+  .section {
+    padding-top: 40px;
+    margin: auto;
+  }
+
+  /* Navbar */
+  .logo {
+    transform: translateX(40%);
+  }
+
+  .navbar__menu {
+    transform: translateX(-5%);
+  }
+  /* Home */
+
+  .home__container {
+    flex-direction: column;
+    align-items: center;
+    padding: var(--margin-large) 0 var(--margin-large) 0;
+  }
+
+  .home__left {
+    order: 2;
+    text-align: center;
+  }
+
+  /* Major */
+  .about__majors {
+    flex-direction: column;
+    margin-top: 0px;
+    padding-bottom: var(--margin-large);
+  }
+  .about__major {
+    display: flex;
+    background-color: var(--color-dark-white);
+    margin: var(--margin-small);
+    padding: var(--padding-large);
+  }
+  .about__right {
+    margin-top: 0;
+    margin-right: var(--margin-large);
+    flex-direction: column;
+  }
+  .category__btn.selected {
+    flex-basis: 80px;
+  }
+  .project {
+    flex-grow: 1;
+    margin: 2px var(--margin-medium);
+  }
+
+  .project img {
+    width: 80%;
+  }
+  .testimonials {
+    padding: var(--padding-large);
+  }
+  .testimonial__left img {
+    width: 120px;
+    margin: var(--margin-medium);
+  }
+
+  .testimonial {
+    flex-direction: column;
+    text-align: center;
+    font-size: var(--font-micro);
+    margin: 0px;
+  }
+
+  section#contact {
+    margin-bottom: Calc(4 * var(--margin-large));
+  }
 }
