@@ -530,6 +530,7 @@ p {
   .navbar__menu {
     transform: translateX(-5%);
   }
+
   /* Home */
 
   .home__container {
@@ -541,6 +542,7 @@ p {
   .home__left {
     order: 2;
     text-align: center;
+    margin: 0;
   }
 
   /* Major */
@@ -569,7 +571,7 @@ p {
   }
 
   .project img {
-    width: 80%;
+    max-width: 80%;
   }
   .testimonials {
     padding: var(--padding-large);
